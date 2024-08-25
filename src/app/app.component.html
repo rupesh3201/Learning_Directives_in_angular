@@ -22,4 +22,13 @@
   </tr>
 </table>
 <hr>
-<h1>ngIf example</h1>
+<h1 align="center" class="text-danger">ngIf example</h1>
+<div *ngIf = "show else child"  align="center">
+  <p>
+    if age is grather than 18+ then u can Vote 
+  </p>
+
+</div>
+<ng-template #child>
+  <p  align="center" >u can't vote causes u are a child </p>
+</ng-template>

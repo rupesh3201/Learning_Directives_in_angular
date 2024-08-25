@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
  
 
+  show = false;
 
   students =[
     {
@@ -32,4 +33,5 @@ export class AppComponent {
     },
 
   ]
+  
 }
