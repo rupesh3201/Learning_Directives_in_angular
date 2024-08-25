@@ -38,7 +38,7 @@
 <p align="center" [ngStyle]="{'color':'green', 'background-color':'yellow'}">ngStyle is use to style something </p>
 <hr>
 <h1>Conditional base Styling</h1>
-
+<!--we can styel with condtion  below is example how we can style -->
 <table  align="center" class="table table-borderd w-50 p-5 bg-info text-black">
   <tr >
     <th> <p>Student Id</p></th>
@@ -54,3 +54,15 @@
 
   </tr>
 </table>
+<hr>
+<h1 align="center" [ngStyle]="{'color':'red', 'font-size':'30px' ,'font-weight':'bold'}">
+  ngClass example
+</h1>
+<ul *ngFor = "let i of students">
+  <li [ngClass]="{'text-sucess':i.sid==='1','text-warning':i.sid==='3',
+  'text-info':i.sid==='2','text-primary':i.sid==='4'}" >
+    {{i.sid}},{{i.name}},{{i.city}},{{i.age}}
+
+  </li>
+
+</ul>
