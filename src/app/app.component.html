@@ -66,3 +66,8 @@
   </li>
 
 </ul>
+<hr>
+<h1 class=" text-center">ngSwitchcase example</h1>
+<ul *ngFor = "let i of students" [ngSwitch]=i.city>
+  <li [ngSwitchCase]="'sangola'" class="text-sucess" class=" text-center">{{i.name}} {{i.city}}</li>
+</ul>
