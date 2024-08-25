@@ -6,3 +6,18 @@
 <p>{{i.age}}</p>
 <hr>
 </div>
+<table  align="center" class="table table-borderd w-50 p-5 bg-info text-black">
+  <tr >
+    <th> <p>Student Id</p></th>
+    <th> <p>Student Name</p></th>
+    <th> <p>Student City</p></th>
+    <th> <p>Student Age</p></th>
+  </tr>
+  <tr *ngFor ="let j of students">
+    <td>{{j.sid}}</td>
+    <td>{{j.name}}</td>
+    <td>>{{j.city}}</td>
+    <td>{{j.age}}</td>
+
+  </tr>
+</table>
