@@ -15,7 +15,7 @@ export class AppComponent {
       sid: "1",
       name: "rupesh",
       city:"nanded",
-      age:21
+      age:18
       
 
     },
@@ -31,6 +31,19 @@ export class AppComponent {
       city:"Sangola",
       age:21
     },
+    { 
+      sid: "1",
+      name: "Harish",
+      city:"Sangola",
+      age:8
+    },
+    { 
+      sid: "1",
+      name: "Om",
+      city:"Sangola",
+      age:16
+    },
+
 
   ]
   
