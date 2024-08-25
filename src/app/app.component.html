@@ -37,3 +37,20 @@
 <h1 align="center">ngStyle example</h1>
 <p align="center" [ngStyle]="{'color':'green', 'background-color':'yellow'}">ngStyle is use to style something </p>
 <hr>
+<h1>Conditional base Styling</h1>
+
+<table  align="center" class="table table-borderd w-50 p-5 bg-info text-black">
+  <tr >
+    <th> <p>Student Id</p></th>
+    <th> <p>Student Name</p></th>
+    <th> <p>Student City</p></th>
+    <th> <p>Student Age</p></th>
+  </tr>
+  <tr *ngFor ="let j of students "[ngStyle]="{'color':j.age>18 ? 'red': 'blue'}">
+    <td>{{j.sid}}</td>
+    <td>{{j.name}}</td>
+    <td>>{{j.city}}</td>
+    <td>{{j.age}}</td>
+
+  </tr>
+</table>
