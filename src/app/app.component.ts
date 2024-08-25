@@ -6,5 +6,30 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'directives';
+ 
+
+
+  students =[
+    {
+      sid: "1",
+      name: "rupesh",
+      city:"nanded",
+      age:21
+      
+
+    },
+    {
+      sid: "2",
+      name: "Sager",
+      city:"Sangola",
+      age:22
+    },
+    { 
+      sid: "3",
+      name: "Onkar",
+      city:"Sangola",
+      age:21
+    },
+
+  ]
 }
